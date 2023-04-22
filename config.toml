@@ -1,0 +1,137 @@
+baseURL       = "http://digio.nz/"
+languageCode  = "en-us"
+title         = "Digio | Digital Electrical Engineering"
+theme         = "roxo-hugo"
+summarylength = 25
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Projects"
+    url     = "projects"
+    weight  = 3
+  [[menu.nav]]
+    name    = "Blog"
+    url     = "blog"
+    weight  = 4
+  [[menu.nav]]
+    name    = "Contact"
+    url     = "contact"
+    weight  = 5
+
+# Site Params
+[params]
+  logo = "images/logo.png"
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "digio | Digital Electrical Engineering - Your trusted partner in engineering services"
+  author = "Digio NZ Ltd"
+  # Google Analytics
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  fabform  = "https://fabform.io/f/USAg2Jl"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    placeholder_project_type      = "Project Type"
+    placeholder_about_the_project = "About the Project"
+    send_message                  = "Send Message"
+
+    [[params.contactForm.projectType]]
+      value = "dc"
+      title  = "HVDC"
+    [[params.contactForm.projectType]]
+      value = "cp"
+      title  = "Control Systems"
+    [[params.contactForm.projectType]]
+      value = "pe"
+      title  = "Project Engineering"
+    [[params.contactForm.projectType]]
+      value = "sh"
+      title  = "Smart Home"
+  
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "contact"
+  
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/hero-background.jpg"
+    heading               = "Powering Digital Innovation"
+    tagline               = "BRIDGING THE GAP BETWEEN ELECTRICAL ENGINEERING AND THE DIGITAL WORLD"
+    primary_button        = "See Projects"
+    primary_button_url    = "projects"
+    secondary_button      = "Contact"
+    secondary_button_url  = "contact"
+
+  [params.projects]
+    enable    = true
+    title     = "RECENT PROJECTS"
+#    subtitle  = "Innovation and quality in every project"
+
+  [params.call_to_action]
+    enable              = true
+    background_image    = "images/backgrounds/cta-background.jpg"
+    title               = "LET’S WORK TOGETHER"
+    primary_button      = "Submit Query"
+    primary_button_url  = "contact"
+    secondary_button    = "Not Convinced"
+    secondary_button_url = "projects"
+
+  [params.footer]
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      address = "Your Business Address"
+      phone   = "Your Phone Number"
+      email   = "info@digio.nz"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Projects"
+          url  = "projects"
+        [[params.footer.sitemap.link]]
+          name = "Services"
+          url  = "services"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "LinkedIn"
+          url  = "https://www.linkedin.com/your-link"
+        [[params.footer.social.link]]
+          name = "Twitter"
+          url  = "https://twitter.com/your-link"
+        [[params.footer.social.link]]
+          name = "Facebook"
+          url  = "https://www.facebook.com/your-link"
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "https://www.instagram.com/your-link"
+      # Footer Service
+      [params.footer.service]
+        title       = "We help businesses:"
+        description = "develop innovative engineering solutions<br>enhance their digital capabilities<br>create efficient electrical systems"

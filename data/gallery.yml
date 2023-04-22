@@ -1,0 +1,8 @@
+enable  : true
+galleryImages :
+  - image : images/projects/item-1.jpg
+  - image : images/projects/item-2.jpg
+  - image : images/projects/item-3.jpg
+  - image : images/projects/item-4.jpg
+  - image : images/projects/item-5.jpg
+  - image : images/projects/item-6.jpg
