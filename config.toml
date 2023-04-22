@@ -1,4 +1,4 @@
-baseURL       = "http://digio.nz/"
+baseURL       = "https://digionz.netlify.app"
 languageCode  = "en-us"
 title         = "Digio | Digital Electrical Engineering"
 theme         = "roxo-hugo"
