@@ -1,4 +1,4 @@
-baseURL       = "http://digio.nz/"
+baseURL       = "https://digio.nz/"
 languageCode  = "en-us"
 title         = "Digio | Digital Electrical Engineering"
 theme         = "roxo-hugo"
