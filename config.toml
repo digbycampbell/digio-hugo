@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 baseURL       = "https://digio.nz/digio-hugo/"
+=======
+baseURL       = "https://digio-hugo.vercel.app"
+>>>>>>> 236f1d4 (Add logos and favicon)
 languageCode  = "en-us"
-title         = "Digio | Digital Electrical Engineering"
+title         = "Digio | Digitizing Electrical Engineering"
 theme         = "roxo-hugo"
 summarylength = 25
 
@@ -33,7 +37,7 @@ summarylength = 25
   logo = "images/logo.png"
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "digio | Digital Electrical Engineering - Your trusted partner in engineering services"
+  description = "digio | Digitizing Electrical Engineering"
   author = "Digio NZ Ltd"
   # Google Analytics
   googleAnalitycsID = "Your ID"
@@ -98,9 +102,9 @@ summarylength = 25
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Contact Info"
-      address = "Your Business Address"
-      phone   = "Your Phone Number"
       email   = "info@digio.nz"
+      phone   = "+1 (425) 209 5226"
+      address = "166 Wicksteed Street<br>Wanganui, 4500<br>New Zealand"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
