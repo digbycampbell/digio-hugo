@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-baseURL       = "https://digio.nz/digio-hugo/"
-=======
 baseURL       = "https://digio-hugo.vercel.app"
->>>>>>> 236f1d4 (Add logos and favicon)
 languageCode  = "en-us"
 title         = "Digio | Digitizing Electrical Engineering"
 theme         = "roxo-hugo"
