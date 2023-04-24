@@ -133,5 +133,5 @@ summarylength = 25
           url  = "https://www.instagram.com/your-link"
       # Footer Service
       [params.footer.service]
-        title       = "We help businesses:"
-        description = "develop innovative engineering solutions<br>enhance their digital capabilities<br>create efficient electrical systems"
+        title       = "Helping you:"
+        description = "innovate and develop<br>digital capabilities<br>creating efficient electrical systems"
