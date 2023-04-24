@@ -1,0 +1,85 @@
+.site-footer{
+  background: $secondary-color;
+  padding: 100px 0;
+  &-logo{
+    margin-bottom: 50px;
+    @include mobile{
+      text-align: center;
+    }
+    img{
+      max-width: 117px;
+    }
+
+  }
+  &-widget{
+    @include desktop{
+      margin-bottom: 40px;
+    }
+    @include mobile{
+      text-align: center;
+    }
+    &-title{
+      color: #3C4151;
+      margin-bottom: 30px;
+      @include desktop{
+        margin-bottom: 20px;
+      }
+    }
+    &-description{
+      color: #3C4151;
+      line-height: 30px;
+      a{
+        color: #3C4151;
+      }
+    }
+    &-links{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        a{
+          color: #3C4151;
+          transition: all 0.3s $site-ease;
+          display: block;
+        }
+        &:not(:last-child){
+          a{
+            padding-bottom: 9px;
+          }
+        }
+      }
+    }
+    &-top{
+      @include mobile{
+        text-align: center;
+        display: block;
+      }
+      img{
+        margin-bottom: 20px;
+      }
+      p{
+        color: #3C4151;
+      }
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  &-copyright{
+    p{
+      color: #3C4151;
+      margin: 50px auto 0;
+      text-align: center;
+    }
+    a{
+      color: $text-color-dark;
+      transition: all .3s ease;
+      @include tablet{
+        font-size: 20px;
+      }
+      @include desktop{
+        margin-bottom: 70px;
+      }
+    }
+  }
+}

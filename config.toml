@@ -1,6 +1,6 @@
 baseURL       = "https://digio-hugo.vercel.app"
 languageCode  = "en-us"
-title         = "Digio | Digitizing Electrical Engineering"
+title         = "digio | Digitizing Electrical Engineering"
 theme         = "roxo-hugo"
 summarylength = 25
 
@@ -75,7 +75,7 @@ summarylength = 25
     background_image      = "images/backgrounds/hero-background.jpg"
     heading               = "Powering Digital Innovation"
     tagline               = "BRIDGING THE GAP BETWEEN ELECTRICAL ENGINEERING AND THE DIGITAL WORLD"
-    primary_button        = "See Projects"
+    primary_button        = "Projects"
     primary_button_url    = "projects"
     secondary_button      = "Contact"
     secondary_button_url  = "contact"
