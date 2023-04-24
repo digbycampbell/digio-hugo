@@ -1,79 +1,92 @@
-.btn{
-  font-family: $secondary-font;
-  border: none;
-  color: $white;
-  padding: 20px 45px;
-  border-radius: 0;
-  &:focus{
-    box-shadow: none;
-  }
-  @include desktop{
-    padding: 17px 40px;
-  }
-  .btn-area{
-    display: block;
-    overflow: hidden;
-    span{
-      position: relative;
-      display: inline-block;
-      padding: 2px 0;
-      transition: transform .9s cubic-bezier(.19,1,.22,1);
-      transform-origin: left center;
-      &::after{
-        content: attr(data-text);
-        position: absolute;
-        top: 150%;
-        left: 0;
-        transform: skewY(30deg);
-        transform-origin: left center;
-        transition: transform .9s cubic-bezier(.19,1,.22,1);
+@keyframes pop-bounce {
+   0% {
+      transform: perspective(500px) translateZ(0);
+   }
+
+   50% {
+      transform: perspective(500px) translateZ(50px);
+   }
+
+   100% {
+      transform: perspective(500px) translateZ(25px);
+   }
+}
+
+.btn {
+   font-family: $secondary-font;
+   border: none;
+   color: $white;
+   padding: 20px 45px;
+   border-radius: 0;
+
+   &:focus {
+      box-shadow: none;
+   }
+
+   @include desktop {
+      padding: 17px 40px;
+   }
+
+   .btn-area {
+      display: block;
+      overflow: visible;
+
+      span {
+         position: relative;
+         display: inline-block;
+         padding: 2px 0;
+         animation: pop-bounce 0.6s forwards;
+         animation-fill-mode: forwards;
+         animation-play-state: paused;
       }
-    }
-  }
-  &:hover{
-    .btn-area{
-      span{
-        transform: translateY(-150%) skewY(7deg);
-        &::after{
-          transform: skewY(-7deg);
-        }
+   }
+
+   &:hover {
+      .btn-area {
+         span {
+            animation-play-state: running;
+         }
       }
-    }
-  }
-  &:visited{
-    .btn-area{
-      span{
-        transform: translateY(-150%) skewY(7deg);
-        &::after{
-          transform: skewY(-7deg);
-        }
+   }
+
+   &:visited {
+      .btn-area {
+         span {
+            animation-play-state: running;
+         }
       }
-    }
-  }
+   }
 }
 
-.btn-sm{
-  padding: 15px 40px !important;
+.btn:not(:hover) .btn-area span {
+   animation: none;
 }
 
-.btn-sm-rounded{
-  border-radius: 40px;
-  color: $white;
+.btn-sm {
+   padding: 15px 40px !important;
+}
+
+.btn-sm-rounded {
+   border-radius: 40px;
+   color: $white;
 
 }
 
-.btn-primary{
-  background: $primary-color;
-  color: $white !important;
-  &:hover{
-    background: darken($color: $primary-color, $amount: 10);
-  }
+.btn-primary {
+   background: $primary-color;
+   color: $white !important;
+
+   &:hover {
+      background: darken($color: $primary-color, $amount: 10);
+   }
 }
 
-.btn-secondary{
-  background: $secondary-color;
-  color: #3C4151;
-  &:hover{
-    background: darken($color: $secondary-color, $amount: 10);
-  }
+.btn-secondary {
+   background: $secondary-color;
+   color: #3C4151;
+
+   &:hover {
+      background: darken($color: $secondary-color, $amount: 10);
+      color: #3C4151;
+   }
 }

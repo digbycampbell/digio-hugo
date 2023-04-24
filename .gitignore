@@ -1,1 +1,4 @@
 public/
+.DS_store
+static/.DS_store
+static/images/.DS_store
