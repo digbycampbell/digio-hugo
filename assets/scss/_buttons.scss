@@ -17,7 +17,7 @@
    border: none;
    color: $white;
    padding: 20px 45px;
-   border-radius: 0;
+   border-radius: 40px;
 
    &:focus {
       box-shadow: none;
@@ -73,20 +73,20 @@
 }
 
 .btn-primary {
-   background: $primary-color;
-   color: $white !important;
-
-   &:hover {
-      background: darken($color: $primary-color, $amount: 10);
-   }
-}
-
-.btn-secondary {
    background: $secondary-color;
    color: #3C4151;
 
    &:hover {
       background: darken($color: $secondary-color, $amount: 10);
       color: #3C4151;
+   }
+}
+
+.btn-secondary {
+   background: $primary-color;
+   color: $white !important;
+
+   &:hover {
+      background: darken($color: $primary-color, $amount: 10);
    }
 }

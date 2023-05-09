@@ -1,6 +1,6 @@
 baseURL       = "https://digio-hugo.vercel.app"
 languageCode  = "en-us"
-title         = "digio | Digitizing Electrical Engineering"
+title         = "digio"
 theme         = "roxo-hugo"
 summarylength = 25
 
@@ -33,7 +33,7 @@ summarylength = 25
   logo = "images/logo.png"
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "digio | Digitizing Electrical Engineering"
+  description = "digio | Digitize Electrical Engineering"
   author = "Digio NZ Ltd"
   # Google Analytics
   googleAnalitycsID = "Your ID"
@@ -53,7 +53,7 @@ summarylength = 25
       value = "dc"
       title  = "HVDC"
     [[params.contactForm.projectType]]
-      value = "cp"
+      value = "cs"
       title  = "Control Systems"
     [[params.contactForm.projectType]]
       value = "pe"
@@ -72,9 +72,9 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "Powering Digital Innovation"
-    tagline               = "BRIDGING THE GAP BETWEEN ELECTRICAL ENGINEERING AND THE DIGITAL WORLD"
+    background_image      = "images/backgrounds/hero-background.png"
+    heading               = "Power + Digital"
+    tagline               = "BRIDGE THE GAP BETWEEN ELECTRICAL ENGINEERING AND THE DIGITAL WORLD"
     primary_button        = "Projects"
     primary_button_url    = "projects"
     secondary_button      = "Contact"
@@ -83,13 +83,13 @@ summarylength = 25
   [params.projects]
     enable    = true
     title     = "RECENT PROJECTS"
-#    subtitle  = "Innovation and quality in every project"
+    subtitle  = "Innovation and quality in every project"
 
   [params.call_to_action]
     enable              = true
     background_image    = "images/backgrounds/cta-background.jpg"
-    title               = "LET’S WORK TOGETHER"
-    primary_button      = "What do you need?"
+    title               = "WHAT DO YOU NEED?"
+    primary_button      = "Let's Work Together"
     primary_button_url  = "contact"
     secondary_button    = "Not Convinced?"
     secondary_button_url = "projects"

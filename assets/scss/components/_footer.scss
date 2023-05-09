@@ -3,11 +3,9 @@
   padding: 100px 0;
   &-logo{
     margin-bottom: 50px;
-    @include mobile{
-      text-align: center;
-    }
+    text-align: center;
     img{
-      max-width: 117px;
+      max-width: 156px;
     }
 
   }
